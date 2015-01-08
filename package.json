@@ -1,0 +1,23 @@
+{
+  "name": "logService",
+  "version": "0.0.0",
+  "description": "Creates a winston logger and additional logging colorized in the console if in development environnment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sven-piller/logService"
+  },
+  "keywords": [
+    "winston",
+    "log"
+  ],
+  "author": "Sven Piller <sven.piller@gmail.com> (https://github.com/sven-piller/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sven-piller/logService/issues"
+  },
+  "homepage": "https://github.com/sven-piller/logService"
+}
