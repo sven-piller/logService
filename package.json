@@ -1,5 +1,5 @@
 {
-  "name": "logService",
+  "name": "logservice",
   "version": "0.0.0",
   "description": "Creates a winston logger and additional logging colorized in the console if in development environnment.",
   "main": "index.js",

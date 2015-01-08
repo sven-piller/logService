@@ -2,15 +2,15 @@
 
 ## Install
 
-  npm install logService --save
+    npm install logService --save
 
 ## Usage
 
-  var logService = require('logService');
+    var logservice = require('logservice');
 
 ## Tests
 
-  npm test
+    npm test
 
 ## Contributing
 
