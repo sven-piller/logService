@@ -1,7 +1,7 @@
 'use strict';
 // Defined within your component
 
-var defaultConfig = (function defaultConfig(){
+var userConfig = (function userConfig(){
   return {
     console: {
       enabled: false
@@ -10,8 +10,9 @@ var defaultConfig = (function defaultConfig(){
       enabled: false
     },
     file: {
-      enabled: false
+      enabled: true,
+      path: 'log'
     }
   };
 })();
-module.exports = defaultConfig;
+module.exports = userConfig;

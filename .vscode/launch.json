@@ -2,7 +2,45 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Launch",
+            "name": "combined_output",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/examples/combined_output.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },{
+            "name": "file_output",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/examples/file_output.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": false,
+            "sourceMaps": false,
+            "outDir": null
+        },{
+            "name": "console_output",
             "type": "node",
             "request": "launch",
             "program": "${workspaceRoot}/examples/console_output.js",
