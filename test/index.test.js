@@ -1,6 +1,6 @@
 var should = require('chai').should;
 var expect = require('chai').expect;
-var logService = require('../index');
+var logService = require('../index')();
 
 
 describe('log', function () {
@@ -11,6 +11,6 @@ describe('log', function () {
 
     // Make sure we have the captured text.
     // expect(captured_text).to.have.string(txt);
-    expect(true).to.be(true);
+    expect(true).to.be.true;
   });
 });
