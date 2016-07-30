@@ -1,44 +1,47 @@
-module.exports = function(grunt) {
+'use strict';
+
+module.exports = function gruntConfig(grunt) {
+  var jsFiles = [
+    'index.js',
+    'gruntfile.js',
+    'lib/**/*.js',
+    'test/**/*.js',
+    'examples/**/*.js'
+  ];
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    uglify: {
-      options: {
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-      },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
-      }
-    },
     // Configure a mochaTest task
-    mochaTest: {
-      test: {
-        options: {
-          reporter: 'spec',
-          require: 'coverage/blanket'
-        },
-        src: ['test/**/*.js']
+    eslint: {
+      options: {
       },
-      coverage: {
+      standard: {
+        src: jsFiles
+      },
+      html: {
         options: {
-          reporter: 'html-cov',
-          quiet: true,
-          captureFile: 'log/coverage.html'
+          format: 'html',
+          configFile: '.eslintrc.json',
+          outputFile: 'coverage/report.html',
+          fix: true
         },
-        src: ['test/**/*.js']
+        src: jsFiles
+      },
+      markdown: {
+        options: {
+          format: require('eslint-formatter-markdown'),
+          configFile: '.eslintrc.json',
+          outputFile: 'coverage/report.md'
+        },
+        src: jsFiles
       }
     }
   });
 
-  // Load the plugin that provides the "uglify" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-
-  // Add the grunt-mocha-test tasks.
-  grunt.loadNpmTasks('grunt-mocha-test');
+  grunt.loadNpmTasks('grunt-eslint');
 
   // Default task(s).
-  grunt.registerTask('default', ['uglify']);
-  grunt.registerTask('test', ['mochaTest']);
+  grunt.registerTask('default', ['eslint:standard']);
+  grunt.registerTask('lint', ['eslint']);
 };
