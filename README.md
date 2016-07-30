@@ -13,23 +13,29 @@ Configurable to log via winston-mongodb to database, via winston to files and/or
 ## Install
 
 ```sh
-npm install logService --save
+npm install node-logservice-db-file-console --save
 ```
 
 
 ## Usage
 
 ```javascript
-var log = require('logservice');
+var log = require('node-logservice-db-file-console')(configObject);
 
-// include custom config
-log.config(configObject);
+// change custom config globally in project
+log.reinit(configObject);
 
 // log events
-log.info('infoText');
-log.warn('warnText');
-log.error('errorText');
-log.debug('debugText');
+log.logConsole('debug text message', 'debug', '[TEST]', 'client');
+log.logConsole('info text message', 'info', '[TEST]', 'client');
+log.logConsole('warn text message', 'warn', '[TEST]', 'client');
+log.logConsole('error text message', 'error', '[TEST]', 'client');
+log.logConsole('exception text message', 'exception', '[TEST]', 'client');
+log.debug('debug text message', '[TEST]', 'client');
+log.info('info text message', '[TEST]', 'client');
+log.warn('warn text message', '[TEST]', 'client');
+log.error('error text message', '[TEST]', 'client');
+log.exception('exception text message', '[TEST]', 'client');
 ```
 
 ### Example Output 
@@ -48,5 +54,5 @@ Feel free and contribute
 
 ## Release History
 
-* 0.2.0 Improvements
-* 0.1.0 Initial release
+* 0.2.0 Console logging
+* 0.0.1 Initial release
