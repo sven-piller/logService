@@ -3,7 +3,7 @@
 /* eslint-disable no-console */
 var userConfig = require('./console_config.js');
 var log = require('./../index')(userConfig);
-require('./_testcases.js')(log, userConfig);
+require('./_testcases.js')(log);
 
 
 log.reinit({ console: { enabled: false } });

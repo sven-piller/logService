@@ -108,12 +108,12 @@ function logErrors(log) {
     log.error(err, '[ERROR]', 'client');
   }
 
-  throw new Error('Fehler 2, unhandled', '[ERROR]', 'client');
+ // throw new Error('Fehler 2, unhandled', '[ERROR]', 'client');
 }
 
-module.exports = exports = function runTests(log, userConfig) {
-  console.log(userConfig);
-  logConsole(log);
+module.exports = exports = function runTests(log) {
+  log.logConsole(log.config, 'trace', '[userConfig]', 'client');
+  // logConsole(log);
   logLog(log);
   logLevels(log);
   logObjects(log);

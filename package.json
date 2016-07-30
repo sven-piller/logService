@@ -1,6 +1,6 @@
 {
   "name": "node-logservice-db-file-console",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Creates a winston logger and additional logging colorized in the console if in development environnment.",
   "main": "index.js",
   "scripts": {
