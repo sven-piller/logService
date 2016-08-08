@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "ansi": "^0.3.1",
-    "lodash": "^4.14.1",
+    "lodash": "^4.14.2",
     "winston": "^2.2.0"
   },
   "devDependencies": {
