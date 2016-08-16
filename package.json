@@ -1,6 +1,6 @@
 {
   "name": "node-logservice-db-file-console",
-  "version": "0.2.0-SNAPSHOT",
+  "version": "0.3.1",
   "description": "Creates a winston logger and additional logging colorized in the console if in development environnment.",
   "main": "index.js",
   "scripts": {
@@ -37,14 +37,15 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "coveralls": "^2.11.12",
-    "eslint": "^3.2.0",
+    "eslint": "^3.2.2",
     "eslint-formatter-markdown": "^1.0.2",
     "grunt": "^1.0.1",
     "grunt-eslint": "^19.0.0",
     "intercept-stdout": "0.1.2",
     "istanbul": "^0.4.4",
-    "jshint": "^2.9.2",
-    "mocha": "^2.5.3",
-    "mocha-lcov-reporter": "^1.2.0"
-  }
+    "mocha": "^3.0.1",
+    "mocha-lcov-reporter": "^1.2.0",
+    "winston-daily-rotate-file": "^1.2.0"
+  },
+  "tonicExampleFilename": "examples/combined_output.js"
 }
