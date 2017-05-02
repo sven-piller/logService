@@ -1,5 +1,7 @@
 # node-logservice-db-file-console
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sven-piller/logService.svg)](https://greenkeeper.io/)
+
 Service for logging in nodejs projects
 
 [![Build Status](https://travis-ci.org/sven-piller/logService.png?branch=master)](https://travis-ci.org/sven-piller/logService)
