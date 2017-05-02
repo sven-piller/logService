@@ -10,6 +10,7 @@ Service for logging in nodejs projects
 [![Coverage Status](https://coveralls.io/repos/github/sven-piller/logService/badge.svg?branch=master)](https://coveralls.io/github/sven-piller/logService?branch=master)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/sven-piller/logService/master/LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/sven-piller/logService.svg?style=plastic)](https://github.com/sven-piller/logService/issues)
+[![Greenkeeper badge](https://badges.greenkeeper.io/sven-piller/logService.svg)](https://greenkeeper.io/)
 
 Configurable to log via winston-mongodb to database, via winston to files and/or to console.
 
@@ -50,8 +51,8 @@ log.exception('exception text message', '[TEST]', 'client');
 ```
 
 ### Example Output
-![Example Output](doc/console_output.png)
 
+![Example Output](doc/console_output.png)
 
 ## Tests
 
@@ -65,6 +66,7 @@ Feel free and contribute
 
 ## Release History
 
-* 0.3.0 File logging
-* 0.2.0 Console logging
-* 0.0.1 Initial release
+- 0.3.3 Updated Readme and Dependencies
+- 0.3.0 File logging
+- 0.2.0 Console logging
+- 0.0.1 Initial release
