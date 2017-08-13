@@ -66,6 +66,7 @@ Feel free and contribute
 
 ## Release History
 
+- 0.3.4 Updated Readme and Dependencies
 - 0.3.3 Updated Readme and Dependencies
 - 0.3.0 File logging
 - 0.2.0 Console logging

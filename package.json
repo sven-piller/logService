@@ -1,6 +1,6 @@
 {
   "name": "node-logservice-db-file-console",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "Creates a winston logger and additional logging colorized in the console if in development environnment.",
   "main": "index.js",
   "scripts": {
@@ -36,9 +36,9 @@
     "winston-mongodb": "^2.0.9"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.1.1",
     "coveralls": "^2.13.1",
-    "eslint": "^3.19.0",
+    "eslint": "^4.4.1",
     "eslint-formatter-markdown": "^1.0.3",
     "grunt": "^1.0.1",
     "grunt-eslint": "^19.0.0",
